@@ -40,5 +40,3 @@ public class UsuarioController {
         service.excluir(id);
     }
 }
-
-
