@@ -28,4 +28,12 @@ public class UsuarioService {
                 .map(u -> u.getSenha().equals(senha))
                 .orElse(false);
     }
+
+    public Iterable<Usuario> listar(){
+        return repo.findAll();
+    }
+
+    public void excluir(Long id){
+        repo.deleteById(id);
+    }
 }
