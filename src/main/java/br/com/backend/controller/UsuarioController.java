@@ -17,7 +17,6 @@ public class UsuarioController {
     public UsuarioController(UsuarioService service){
         this.service = service;
     }
-
     @PostMapping("/cadastro")
     public Usuario cadastrar(@RequestBody Usuario usuario){
         return service.salvar(usuario);

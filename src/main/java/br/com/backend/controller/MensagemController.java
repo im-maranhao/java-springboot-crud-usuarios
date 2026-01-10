@@ -12,5 +12,6 @@ public class MensagemController {
     @GetMapping("/api/mensagem")
     public Map<String, String> mensagem(){
         return Map.of("mensagem", "Olá do backend Java!");
+
     }
 }
