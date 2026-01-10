@@ -20,6 +20,5 @@ public class Usuario {
 
     private String senha;
 
-
 }
 
