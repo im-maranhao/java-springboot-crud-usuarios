@@ -23,7 +23,6 @@ public class UsuarioController {
     }
 
     @PostMapping("/login")
-
     public Map<String, Object> login(@RequestBody Map<String, String> req){
         boolean ok = service.login(req.get("email"), req.get("senha"));
         return Map.of("sucesso", ok);
@@ -39,3 +38,4 @@ public class UsuarioController {
         service.excluir(id);
     }
 }
+
